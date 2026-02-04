@@ -1,0 +1,314 @@
+.searchBar {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+body {
+    background: url('./largebg.png');
+    background-position: bottom;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    /* overflow: hidden; */
+}
+
+.searchBarParentDiv {
+    width: 50%;
+    position: relative;
+
+
+}
+
+.inputfield {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+
+}
+
+.searchIcon {
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 1px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.mainContentParentContainer {
+    height: 90vh;
+    display: flex;
+}
+
+.leftContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rightContainer {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.line {
+    color: black;
+
+}
+
+.leftchild {
+    background-color: rgb(212, 212, 212, 0.4);
+    width: 85%;
+    height: 44vh;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+
+}
+
+.leftchild:hover {
+    backdrop-filter: blur(1px);
+    background-color: rgb(9, 116, 116);
+}
+
+.deg {
+    font-size: 20px;
+}
+
+.cityName {
+    color: rgb(23, 105, 92);
+    font-weight: bold;
+    
+}
+
+.city {
+    color: aliceblue;
+    font-size: 25px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.Text {
+    color: rgb(234, 226, 226);
+    font-size: 15px;
+}
+
+.Text:hover {
+    color: rgb(7, 19, 183);
+}
+
+.right-rows {
+
+    height: 27vh;
+    width: 100%;
+}
+
+.pressure {
+    background-color: rgb(212, 212, 212, 0.4);
+    width: fit-content;
+    padding: 2% 4%;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    align-items: center;
+}
+.pressure:hover{
+    background-color: rgb(9, 116, 116);
+}
+
+.rowTwoContainer {
+    background: rgb(212, 212, 212, 0.4);
+    backdrop-filter: blur(5px);
+    width: 45%;
+    height: 85%;
+    border-radius: 10px;
+
+}
+.rowTwoContainer:hover{
+    background-color: rgb(9, 116, 116);
+}
+.airText {
+    font-size: 10px;
+
+}
+
+.AQTEXT {
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+.stext {
+    font-size: 25px;
+}
+
+.nextFiveDaysTemp {
+    padding: 10px;
+}
+
+.today-container {
+    background: rgb(212, 212, 212, 0.4);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+.today-container:hover{
+    background-color: rgb(9, 116, 116);
+}
+
+.timetext {
+    font-size: 10px;
+}
+
+.degtext {
+    font-size: 10px;
+}
+
+.sunriseContainer {
+    gap: 2px;
+    margin-left: 25px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    .body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+    }
+
+    .rightContainer {
+        width: 100%;
+
+    }
+    .leftContainer {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .mainContentParentContainer {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .searchBar {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .searchBarParentDiv {
+        width: 85%;
+        height: fit-content;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .inputfield {
+        border-radius: 25px;
+    }
+
+    .rowOne {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 10px;
+
+    }
+
+    .rowTwo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 105px;
+
+    }
+
+    .airQuality {
+        width: 80%;
+        height: 80%;
+        justify-content: center;
+    }
+
+    .sunriseandset {
+        width: 80%;
+        height: 90%;
+
+    }
+    .both { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+
+    }
+
+    .rowThree {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+
+    }
+
+    .today-container {
+        width: 30%;
+        padding: 2px;
+
+    }
+
+    .timetext {
+        font-size: 18px;
+    }
+
+    .todayText {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .currentTemp {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .dateandtime {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+    .cityName{
+        font-size: 35px;
+    }
+    #skyDescription{
+        font-size: 28px;
+    }
+}
